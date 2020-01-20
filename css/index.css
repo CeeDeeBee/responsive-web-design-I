@@ -230,7 +230,7 @@ h2 {
 
 /* Styling for top two sections */
 .top-section-div {
-    height: 17vh;
+    height: 20vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -247,7 +247,7 @@ h2 {
 
 /* Styling for bottom three sections */
 .bottom-section-div {
-    height: 20vh;
+    height: 24vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -255,7 +255,7 @@ h2 {
 }
 
 .bottom-section {
-    width: 33%;
+    width: 32%;
 }
 
 /* Styling for contact section */
@@ -360,6 +360,71 @@ footer div {
     height: 10vh;
     display: flex;
     align-items: center;
+}
+
+/* Home tablet styles */
+@media (max-width: 800px) and (min-width: 501px) {
+    header {
+        width: 90%;
+    }
+
+    nav {
+        height: 10vh;
+        margin-top: 5%;
+        justify-content: center;
+        flex-wrap: wrap-reverse;
+        align-content: space-between;
+    }
+
+    .nav-links a {
+        font-size: 18px;
+    }
+
+    .nav-links {
+        width: 100%;
+    }
+
+    .header-section {
+        height: 50vh;
+    }
+
+    .header-section h1 {
+        margin-bottom: 4%;
+    }
+
+    .header-section button {
+        background: white;
+    }
+
+    .header-section img {
+        display: none;
+    }
+
+    .content {
+        width: 90%;
+    }
+
+    .top-section-div {
+        height: 22vh;
+        justify-content: space-around;
+    }
+
+    .top-section {
+        width: 47%;
+    }
+
+    .bottom-section-div {
+        height: 30vh;
+        justify-content: space-around;
+    }
+
+    .bottom-section {
+        width: 30%;
+    }
+
+    #contact {
+        height: 25vh;
+    }
 }
 
 /* Home mobile styles */
