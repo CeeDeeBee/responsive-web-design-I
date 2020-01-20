@@ -1,3 +1,506 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
 
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header {
+    width: 80%;
+}
+
+p {
+    font-size: 17px;
+    line-height: 1.2;
+}
+
+/* nav styles */
+nav {
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links {
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav a {
+    color: silver;
+    text-decoration: none;
+}
+
+/* header section styles */
+.header-section {
+    height: 55vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid black;
+}
+
+.header-section div {
+    width: 100%;
+    text-align: center;
+}
+
+.header-section h1 {
+    font-size: 85px;
+}
+
+.header-section button {
+    padding: 1% 7%;
+    font-size: 17px;
+    border: 1px solid black;
+}
+
+/* Styling for content area */
+h2 {
+    font-size: 20px;
+}
+
+.content {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Styling for top two sections */
+.top-section-div {
+    height: 17vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top-section {
+    width: 49%;
+}
+
+/* Styling for middle content image */
+.middle-img {
+    width: 100%;
+}
+
+/* Styling for bottom three sections */
+.bottom-section-div {
+    height: 20vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid black;
+}
+
+.bottom-section {
+    width: 33%;
+}
+
+/* Styling for contact section */
+#contact {
+    height: 22vh;
+    width: 80%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#contact a {
+    font-size: 17px;
+}
+
+/* Styling for footer */
+footer div {
+    height: 5vh;
+    text-align: center;
+}
+
+/* Serices page styles */
+/* Header styles */
+.services-header-img {
+    width: 100%;
+}
+
+.services-header-section {
+    height: 17vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-bottom: 1px solid black;
+}
+
+.services-header-section h1 {
+    font-size: 30px;
+}
+
+/* Content styling */
+.services-content {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-content: space-evenly;
+}
+
+/* Card styling */
+.cards-div {
+    height: 95vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-evenly;
+}
+
+.card {
+    height: 26vh;
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background: WhiteSmoke;
+    padding: 2%;
+    border: 1px solid black;
+}
+
+.card button {
+    width: 30%;
+    background: white;
+    border: 1px solid black;
+    padding: 2% 0;
+    border-radius: 5px;
+}
+
+/* Facts section styling */
+.facts {
+    border-top: 2px solid black;
+    height: 40vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.facts-text {
+    height: 33vh;
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.facts-text ul {
+    list-style-type: square;
+    list-style-position: inside;
+    line-height: 2;
+}
+
+/* Footer styling */
+.services-footer-div {
+    height: 10vh;
+    display: flex;
+    align-items: center;
+}
+
+/* Home mobile styles */
+@media (max-width: 500px) {
+    header {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav {
+        height: 45vh;
+        width: 100%;
+        flex-direction: column-reverse;
+        justify-content: flex-end;
+    }
+
+    .nav-links {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    nav a {
+        width: 100%;
+        font-size: 20px;
+        text-align: center;
+        padding: 4% 0;
+        border-bottom: 1px solid gray;
+    }
+
+    .nav-logo {
+        width: 100%;
+        text-align: center;
+        padding: 4% 0;
+        border-bottom: 1px solid gray;
+    }
+
+    .header-section {
+        width: 90%;
+    }
+
+    .header-section button {
+        background-color: white;
+    }
+
+    .header-section img {
+        display: none;
+    }
+
+    .content {
+        height: 150vh;
+        width: 90%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .top-section-div {
+        height: 40vh;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .top-section {
+        width: 100%;
+    }
+
+    .bottom-section-div {
+        height: 58vh;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .bottom-section {
+        width: 100%;
+    }
+
+    #contact {
+        height: 25vh;
+        width: 100%;
+    }
+}
+
+/* Services mobile styles from previous stretch goal */
+/* @media (max-width: 700px) {
+    html {
+        width: 100vw;
+        height: auto;
+    }
+
+    header {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-wrapper {
+        height: 15vh;
+        flex-wrap: wrap-reverse;
+        justify-content: center;
+    }
+
+    nav {
+        width: 100%;
+        justify-content: space-around;
+    }
+
+    .services-header-section {
+        height: 30vh;
+        width: 95%;
+    }
+
+    .services-content {
+        width: 95%;
+    }
+
+    .cards-div {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
+        height: 275vh;
+    }
+
+    .card {
+        width: 100%;
+        height: 40vh;
+    }
+
+    .facts {
+        flex-direction: column;
+        height: 90vh;
+    }
+
+    .facts-text {
+        width: 95vw;
+        height: 65vh;
+        justify-content: space-evenly;
+    }
+
+    .facts img {
+        width: 100vw;
+    }
+} */
