@@ -362,7 +362,7 @@ footer div {
     align-items: center;
 }
 
-/* Home tablet styles */
+/* Tablet styles */
 @media (max-width: 800px) and (min-width: 501px) {
     header {
         width: 90%;
@@ -425,10 +425,61 @@ footer div {
     #contact {
         height: 25vh;
     }
+
+    /* Services styles */
+    .services-header-section {
+        height: 20vh;
+    }
+
+    .services-header-img {
+        margin-top: 5%;
+    }
+
+    .services-content {
+        width: 90%;
+    }
+
+    .card {
+        height: 30vh;
+    }
+
+    .cards-div {
+        height: 105vh;
+    }
+
+    .facts {
+        height: 25vh;
+    }
+
+    .facts-text {
+        height: 15vh;
+        width: 100%;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .facts-text h2 {
+        width: 100%;
+    }
+
+    .facts-text p {
+        width: 80%;
+    }
+
+    .facts-text ul {
+        transform: translateY(-15%);
+    }
+
+    .services-info-img {
+        display: none;
+    }
 }
 
-/* Home mobile styles */
+/* Mobile styles */
 @media (max-width: 500px) {
+
+    /* Nav styles */
     header {
         width: 100%;
         display: flex;
@@ -437,7 +488,7 @@ footer div {
     }
 
     nav {
-        height: 45vh;
+        height: 49vh;
         width: 100%;
         flex-direction: column-reverse;
         justify-content: flex-end;
@@ -463,6 +514,7 @@ footer div {
         border-bottom: 1px solid gray;
     }
 
+    /* Home Styles */
     .header-section {
         width: 90%;
     }
@@ -506,36 +558,15 @@ footer div {
         height: 25vh;
         width: 100%;
     }
-}
 
-/* Services mobile styles from previous stretch goal */
-/* @media (max-width: 700px) {
-    html {
-        width: 100vw;
-        height: auto;
-    }
-
-    header {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .nav-wrapper {
-        height: 15vh;
-        flex-wrap: wrap-reverse;
-        justify-content: center;
-    }
-
-    nav {
-        width: 100%;
-        justify-content: space-around;
-    }
-
+    /* Services mobile styles */
     .services-header-section {
-        height: 30vh;
+        height: 25vh;
         width: 95%;
+    }
+
+    .services-header-img {
+        display: none;
     }
 
     .services-content {
@@ -546,12 +577,12 @@ footer div {
         flex-direction: column;
         flex-wrap: nowrap;
         justify-content: space-evenly;
-        height: 275vh;
+        height: 200vh;
     }
 
     .card {
         width: 100%;
-        height: 40vh;
+        height: 30vh;
     }
 
     .facts {
@@ -561,11 +592,11 @@ footer div {
 
     .facts-text {
         width: 95vw;
-        height: 65vh;
+        height: 45vh;
         justify-content: space-evenly;
     }
 
     .facts img {
         width: 100vw;
     }
-} */
+}
